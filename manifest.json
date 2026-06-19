@@ -1,0 +1,34 @@
+{
+  "name": "cortex-plugin-weather-climate",
+  "version": "1.0.0",
+  "description": "Weather & Climate Risk Analyst — OpenWeatherMap/NOAA/ECMWF multi-source weather aggregation and climate risk assessment",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-weather-climate",
+  "homepage": "https://cortexprism.io/marketplace/plugins/weather-climate",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "weather_forecast",
+      "description": "Get weather forecast for location",
+      "params": []
+    },
+    {
+      "name": "weather_climate_trends",
+      "description": "Analyze historical climate trends",
+      "params": []
+    },
+    {
+      "name": "weather_risk_assessment",
+      "description": "Assess climate risk for assets",
+      "params": []
+    },
+    { "name": "weather_alerts", "description": "Set severe weather alerts", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
